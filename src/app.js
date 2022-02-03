@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     return res.status(200).send('Hola Mundo!!!');
 });
 
